@@ -15,6 +15,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>nexus3.beescloud.com</id>
+      <url>https://nexus3.beescloud.com/repository/maven-snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
   <distributionManagement>
     <snapshotRepository>
       <id>nexus3.beescloud.com</id>
