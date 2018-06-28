@@ -1,11 +1,11 @@
 pipeline {
-  agent { label 'local-agent' }
+  agent {
+    label 'local-agent'
+  }
   stages {
     stage('build') {
       steps {
-        withMaven(maven: 'M3') {
-          sh "mvn clean deploy"
-        }
+        sh 'echo hello'
       }
     }
   }
