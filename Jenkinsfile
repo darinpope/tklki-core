@@ -1,8 +1,5 @@
 pipeline {
   agent { label 'local-agent' }
-  triggers {
-    snapshotDependencies()
-  }
   stages {
     stage('build') {
       steps {
